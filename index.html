@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek - Developer Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.04rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+      }
+      .firstSection > div {
+        width: 90%;
+        max-width: 500px;
+      }
+      .leftSection {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 100%;
+        max-width: 300px;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: auto;
+        padding-bottom: 40px;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 233px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          padding: 20px;
+        }
+
+        .firstSection {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .secondSection .box {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .footer {
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Abhishek Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Abhishek</span>
+
+          <div>and I am a passionate</div>
+          <div>Web Developer</div>
+          <div class="buttons">
+            <a
+              href="https://drive.google.com/drive/folders/153yACWy3CAgMgbjHXXLYF5FdXmEb8eoC"
+              download
+              class="btn"
+              >Download Resume</a
+            >
+            <a href="https://github.com/Abhiverma2004" class="btn"
+              >Visit Github</a
+            >
+          </div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="Developer Image" />
+        </div>
+      </section>
+
+      <section id="about" class="secondSection">
+        <h1>About Me</h1>
+        <p>
+          I am Abhishek, a web developer with experience in building
+          high-quality websites using modern web technologies like HTML, CSS,
+          JavaScript, and ReactJS.
+        </p>
+      </section>
+
+      <section id="services" class="secondSection">
+        <h1>Services</h1>
+        <ul>
+          <li>Custom Web Development</li>
+          <li>Responsive Design</li>
+          <li>Frontend Development with React</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="projects" class="secondSection">
+        <h1>Projects</h1>
+        <!-- <div id="github-projects"> -->
+        <a href="https://github.com/Abhiverma2004/College-Trip-Website"
+          >College Trip Website</a
+        ><br />
+        <a href="https://github.com/Abhiverma2004/Responsive-Loading-Page"
+          >Responsive Content Loading</a
+        ><br />
+        <a href="https://github.com/Abhiverma2004/Stopwatch-Web-Application"
+          >Stopwatch-Web-Application</a
+        >
+        <!-- GitHub projects will be displayed here -->
+        <!-- </div> -->
+      </section>
+      <section id="Contact" class="secondSection">
+        <h1>Contact</h1>
+        <p>Email: apreevverma2004@gmail.com</p>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Abhishek Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; Abhishekportfolio.com || All right reserved
+      </div>
+    </footer> -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Programmer"],
+        typeSpeed: 50,
+      });
+
+      // Fetch GitHub Projects
+      async function fetchGitHubRepos() {
+        try {
+          const response = await fetch("https://github.com/Abhiverma2004");
+          const repos = await response.json();
+          const projectsContainer = document.getElementById("github-projects");
+
+          // If the response is empty or fails, handle errors
+          if (!repos || repos.length === 0) {
+            projectsContainer.innerHTML = "<p>No projects found.</p>";
+            return;
+          }
+
+          // Loop through repos and display the first 5
+          repos.slice(0, 5).forEach((repo) => {
+            const repoEl = document.createElement("div");
+            repoEl.style.border = "1px solid #444"; // Add some styling
+            repoEl.style.margin = "10px";
+            repoEl.style.padding = "15px";
+            repoEl.style.borderRadius = "8px";
+
+            // Insert repository name and description into the container
+            repoEl.innerHTML = `
+          <h2>${repo.name}</h2>
+          <p>${
+            repo.description ? repo.description : "No description available."
+          }</p>
+          <a href="${
+            repo.html_url
+          }" target="_blank" style="color: lightblue;">View Project on GitHub</a>
+        `;
+
+            projectsContainer.appendChild(repoEl);
+          });
+        } catch (error) {
+          console.error("Error fetching GitHub repositories:", error);
+          document.getElementById("github-projects").innerHTML =
+            "<p>Failed to load projects. Please try again later.</p>";
+        }
+      }
+
+      // Call the function when the page loads
+      document.addEventListener("DOMContentLoaded", fetchGitHubRepos);
+    </script>
+  </body>
+</html>
